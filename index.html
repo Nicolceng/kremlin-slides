@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>🎮 RUSIA vs ESTONIA — ULTIMATE SHOWDOWN</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap');
+
 
 :root{
   --bg:#0D0D1A; --bg2:#12122A; --card:#1A1A35;
@@ -14,7 +14,7 @@
   --white:#FFFFFF; --grey:#6B7280;
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--white);font-family:'Rajdhani',sans-serif}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--white);font-family:'Trebuchet MS','Arial',sans-serif}
 
 /* ── LAYOUT ── */
 #deck{position:relative;width:100%;height:100%}
@@ -23,12 +23,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 
 /* ── NAV ── */
 #nav{position:fixed;bottom:0;left:0;right:0;z-index:900;background:rgba(13,13,26,.95);border-top:1px solid rgba(0,245,255,.2);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
-.btn{background:transparent;color:var(--cyan);border:1px solid var(--cyan);padding:7px 20px;font-family:'Orbitron',monospace;font-size:11px;font-weight:700;cursor:pointer;letter-spacing:2px;text-transform:uppercase;transition:all .15s;user-select:none}
+.btn{background:transparent;color:var(--cyan);border:1px solid var(--cyan);padding:7px 20px;font-family:'Courier New',monospace;font-size:11px;font-weight:700;cursor:pointer;letter-spacing:2px;text-transform:uppercase;transition:all .15s;user-select:none}
 .btn:hover:not(:disabled){background:rgba(0,245,255,.1)}
 .btn:active:not(:disabled){transform:scale(.96)}
 .btn:disabled{color:#333;border-color:#222;cursor:default}
 #prog-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
-#slide-num{font-family:'Orbitron',monospace;font-size:9px;color:var(--cyan);letter-spacing:3px}
+#slide-num{font-family:'Courier New',monospace;font-size:9px;color:var(--cyan);letter-spacing:3px}
 #prog-bar{width:100%;height:3px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
 #prog-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));transition:width .3s ease;width:0%}
 
@@ -46,9 +46,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .box-glow-purple{box-shadow:0 0 20px rgba(139,0,255,.3),inset 0 0 20px rgba(139,0,255,.05)}
 
 /* ── TYPOGRAPHY ── */
-.t-game{font-family:'Black Ops One',cursive;text-transform:uppercase;letter-spacing:2px}
-.t-orb{font-family:'Orbitron',monospace;text-transform:uppercase}
-.t-raj{font-family:'Rajdhani',sans-serif}
+.t-game{font-family:'Impact','Arial Black',sans-serif;text-transform:uppercase;letter-spacing:2px}
+.t-orb{font-family:'Courier New',monospace;text-transform:uppercase}
+.t-raj{font-family:'Trebuchet MS','Arial',sans-serif}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -80,7 +80,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .corner-deco.br{bottom:56px;right:12px;border-bottom:2px solid var(--cyan);border-right:2px solid var(--cyan)}
 
 /* ── SLIDE TICKER ── */
-.s-ticker{position:absolute;top:0;left:0;right:0;overflow:hidden;white-space:nowrap;background:linear-gradient(90deg,var(--purple),var(--pink),var(--purple));padding:5px 0;font-size:11px;font-family:'Orbitron',monospace;letter-spacing:2px;text-transform:uppercase}
+.s-ticker{position:absolute;top:0;left:0;right:0;overflow:hidden;white-space:nowrap;background:linear-gradient(90deg,var(--purple),var(--pink),var(--purple));padding:5px 0;font-size:11px;font-family:'Courier New',monospace;letter-spacing:2px;text-transform:uppercase}
 .s-ticker span{display:inline-block;animation:ticker2 20s linear infinite}
 
 /* ── FIFA CARD ── */
@@ -95,10 +95,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .fifa-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,245,255,.05),transparent)}
 .fifa-card.ru{border-color:var(--pink);box-shadow:0 0 30px rgba(255,0,110,.25)}
 .fifa-card.ru::before{background:linear-gradient(135deg,rgba(255,0,110,.05),transparent)}
-.fc-rating{font-family:'Orbitron',monospace;font-size:clamp(28px,7vw,48px);font-weight:900;line-height:1}
+.fc-rating{font-family:'Courier New',monospace;font-size:clamp(28px,7vw,48px);font-weight:900;line-height:1}
 .fc-pos{font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:6px}
 .fc-flag{font-size:clamp(28px,8vw,48px);margin:6px 0}
-.fc-name{font-family:'Black Ops One',cursive;font-size:clamp(14px,3.5vw,22px);letter-spacing:1px;margin-bottom:8px}
+.fc-name{font-family:'Impact','Arial Black',sans-serif;font-size:clamp(14px,3.5vw,22px);letter-spacing:1px;margin-bottom:8px}
 .fc-stats{display:grid;grid-template-columns:1fr 1fr;gap:3px;text-align:left}
 .fc-stat{display:flex;justify-content:space-between;font-size:clamp(9px,2vw,12px);padding:2px 4px;background:rgba(255,255,255,.05)}
 .fc-stat .sk{color:var(--grey);letter-spacing:1px;text-transform:uppercase}
@@ -106,7 +106,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 
 /* ── VS BADGE ── */
 .vs-badge{
-  font-family:'Black Ops One',cursive;
+  font-family:'Impact','Arial Black',sans-serif;
   font-size:clamp(24px,6vw,48px);
   color:var(--yellow);
   text-shadow:0 0 20px var(--yellow),0 0 40px rgba(255,229,0,.4);
@@ -119,18 +119,18 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   padding:16px;text-align:center;position:relative;overflow:hidden;
 }
 .stat-block::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent)}
-.sb-num{font-family:'Orbitron',monospace;font-size:clamp(24px,7vw,52px);font-weight:900;line-height:1}
+.sb-num{font-family:'Courier New',monospace;font-size:clamp(24px,7vw,52px);font-weight:900;line-height:1}
 .sb-label{font-size:10px;color:var(--grey);letter-spacing:2px;text-transform:uppercase;margin-top:6px}
-.sb-badge{font-family:'Orbitron',monospace;font-size:12px;letter-spacing:1px;padding:3px 10px;margin-top:8px;display:inline-block}
+.sb-badge{font-family:'Courier New',monospace;font-size:12px;letter-spacing:1px;padding:3px 10px;margin-top:8px;display:inline-block}
 
 /* ── HEALTH BAR ── */
 .health-bar-wrap{width:100%;max-width:680px}
 .hb-row{display:flex;align-items:center;gap:8px;margin-bottom:10px}
-.hb-name{font-family:'Orbitron',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;min-width:70px;text-align:right}
+.hb-name{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;min-width:70px;text-align:right}
 .hb-track{flex:1;height:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);overflow:hidden;position:relative}
 .hb-fill{height:100%;transition:width 1.4s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
 .hb-fill::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:rgba(255,255,255,.2);animation:shine 2s 1.5s ease-in-out}
-.hb-val{font-family:'Orbitron',monospace;font-size:10px;min-width:50px;letter-spacing:1px}
+.hb-val{font-family:'Courier New',monospace;font-size:10px;min-width:50px;letter-spacing:1px}
 
 /* ── ACHIEVEMENT CARD ── */
 .achieve{
@@ -145,9 +145,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .achieve.ru::before{background:linear-gradient(180deg,var(--pink),var(--purple))}
 .achieve.ee::before{background:linear-gradient(180deg,var(--cyan),var(--green))}
 .achieve-icon{font-size:24px;flex-shrink:0}
-.achieve-title{font-family:'Rajdhani',sans-serif;font-size:clamp(13px,3vw,17px);font-weight:700;color:var(--white);margin-bottom:3px}
+.achieve-title{font-family:'Trebuchet MS','Arial',sans-serif;font-size:clamp(13px,3vw,17px);font-weight:700;color:var(--white);margin-bottom:3px}
 .achieve-body{font-size:12px;color:var(--grey);line-height:1.55}
-.achieve-badge{font-family:'Orbitron',monospace;font-size:9px;letter-spacing:1px;margin-top:5px;display:inline-block;padding:2px 8px;border:1px solid rgba(255,255,255,.1);color:var(--grey)}
+.achieve-badge{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;margin-top:5px;display:inline-block;padding:2px 8px;border:1px solid rgba(255,255,255,.1);color:var(--grey)}
 
 /* ── TIMELINE ── */
 .timeline{width:100%;max-width:680px}
@@ -155,21 +155,21 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .tl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:4px}
 .tl-line{position:relative}
 .tl-line::after{content:'';position:absolute;top:14px;left:4px;width:2px;background:rgba(255,255,255,.1);height:calc(100% + 4px)}
-.tl-year{font-family:'Orbitron',monospace;font-size:10px;letter-spacing:1px;margin-bottom:3px}
+.tl-year{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;margin-bottom:3px}
 .tl-text{font-size:12px;color:var(--grey);line-height:1.55}
 
 /* ── QUIZ ── */
 #qz{width:100%;max-width:660px;display:none;flex-direction:column;gap:12px}
 #qz.on{display:flex}
 .qz-header{display:flex;justify-content:space-between;background:var(--card);border:1px solid rgba(0,245,255,.15);padding:10px 14px}
-.qz-score{font-family:'Orbitron',monospace;font-size:22px;font-weight:900;color:var(--yellow)}
+.qz-score{font-family:'Courier New',monospace;font-size:22px;font-weight:900;color:var(--yellow)}
 .qz-label{font-size:9px;color:var(--grey);letter-spacing:2px;text-transform:uppercase}
-.qz-q{font-family:'Rajdhani',sans-serif;font-size:clamp(15px,3.5vw,21px);font-weight:700;text-align:center;color:var(--white);line-height:1.35;padding:6px 0}
+.qz-q{font-family:'Trebuchet MS','Arial',sans-serif;font-size:clamp(15px,3.5vw,21px);font-weight:700;text-align:center;color:var(--white);line-height:1.35;padding:6px 0}
 .qz-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .qz-opt{
   background:var(--card);border:1px solid rgba(0,245,255,.2);
   padding:clamp(12px,3vw,18px);
-  font-family:'Rajdhani',sans-serif;font-size:clamp(13px,3vw,18px);font-weight:700;
+  font-family:'Trebuchet MS','Arial',sans-serif;font-size:clamp(13px,3vw,18px);font-weight:700;
   color:var(--white);cursor:pointer;text-align:center;
   text-transform:uppercase;letter-spacing:.5px;
   transition:all .15s;user-select:none;
@@ -179,18 +179,18 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .qz-opt.correct{background:rgba(0,255,136,.1)!important;border-color:var(--green)!important;color:var(--green)!important}
 .qz-opt.wrong{background:rgba(255,0,110,.1)!important;border-color:var(--pink)!important;color:var(--pink)!important;animation:glitch .3s ease}
 .qz-opt:disabled{cursor:default;opacity:.7}
-.qz-fb{text-align:center;font-family:'Rajdhani',sans-serif;font-size:clamp(14px,3vw,19px);font-weight:600;min-height:30px;padding:6px}
+.qz-fb{text-align:center;font-family:'Trebuchet MS','Arial',sans-serif;font-size:clamp(14px,3vw,19px);font-weight:600;min-height:30px;padding:6px}
 .qz-fb.ok{color:var(--green)}
 .qz-fb.bad{color:var(--pink)}
 .qz-next{display:none;width:100%}
 
 /* ── RESULT ── */
 .result-icon{font-size:clamp(50px,15vw,90px);display:block;text-align:center}
-.result-pts{font-family:'Orbitron',monospace;font-size:clamp(50px,14vw,100px);font-weight:900;line-height:1}
+.result-pts{font-family:'Courier New',monospace;font-size:clamp(50px,14vw,100px);font-weight:900;line-height:1}
 
 /* ── FINAL SCOREBOARD ── */
 .final-score{
-  font-family:'Black Ops One',cursive;
+  font-family:'Impact','Arial Black',sans-serif;
   font-size:clamp(70px,18vw,130px);
   line-height:1;letter-spacing:-2px;
 }
@@ -217,9 +217,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   <div class="t-game glow-pink a-zoom d1" style="font-size:clamp(42px,10vw,90px);text-align:center;line-height:1;margin-bottom:6px">RUSIA<br><span style="color:var(--cyan)">VS</span><br><span style="color:#444">ESTONIA</span></div>
   <p class="t-orb a-up d3" style="font-size:clamp(11px,2.5vw,16px);letter-spacing:3px;color:var(--yellow);margin:14px 0">ULTIMATE SHOWDOWN · 2026 EDITION</p>
   <div class="a-up d4" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px">
-    <span style="background:rgba(255,0,110,.15);border:1px solid var(--pink);padding:5px 14px;font-family:'Orbitron',monospace;font-size:10px;letter-spacing:2px">10 ROUNDS</span>
-    <span style="background:rgba(0,245,255,.1);border:1px solid var(--cyan);padding:5px 14px;font-family:'Orbitron',monospace;font-size:10px;letter-spacing:2px">DATOS REALES</span>
-    <span style="background:rgba(255,229,0,.1);border:1px solid var(--yellow);padding:5px 14px;font-family:'Orbitron',monospace;font-size:10px;letter-spacing:2px">+ QUIZ</span>
+    <span style="background:rgba(255,0,110,.15);border:1px solid var(--pink);padding:5px 14px;font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px">10 ROUNDS</span>
+    <span style="background:rgba(0,245,255,.1);border:1px solid var(--cyan);padding:5px 14px;font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px">DATOS REALES</span>
+    <span style="background:rgba(255,229,0,.1);border:1px solid var(--yellow);padding:5px 14px;font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px">+ QUIZ</span>
   </div>
   <p class="a-fade d5" style="font-size:10px;color:#333;margin-top:16px;letter-spacing:2px;text-transform:uppercase">→ SWIPE O FLECHAS PARA CONTINUAR ←</p>
 </div>
@@ -289,13 +289,13 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
   <div class="a-up d3" style="margin-top:18px;text-align:center">
     <div style="background:rgba(255,0,110,.1);border:1px solid rgba(255,0,110,.3);padding:12px 20px;max-width:580px">
-      <p class="t-raj" style="font-size:clamp(13px,3vw,17px);color:var(--white)">Estonia cabe <span style="color:var(--yellow);font-family:'Orbitron',monospace;font-size:1.3em">×378</span> dentro de Rusia.<br>
+      <p class="t-raj" style="font-size:clamp(13px,3vw,17px);color:var(--white)">Estonia cabe <span style="color:var(--yellow);font-family:'Courier New',monospace;font-size:1.3em">×378</span> dentro de Rusia.<br>
       <span style="color:var(--grey);font-size:.88em">Si Rusia fuera un mapa de Minecraft, Estonia sería el spawn inicial.</span></p>
     </div>
   </div>
   <div class="a-fade d4" style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;justify-content:center">
-    <span style="background:rgba(255,0,110,.1);border:1px solid rgba(255,0,110,.3);padding:5px 12px;font-family:'Orbitron',monospace;font-size:10px;color:var(--pink);letter-spacing:1px">🏆 RUSIA WINS</span>
-    <span style="background:rgba(255,255,255,.05);border:1px solid #222;padding:5px 12px;font-family:'Orbitron',monospace;font-size:10px;color:#444;letter-spacing:1px">ESTONIA: RESPAWN</span>
+    <span style="background:rgba(255,0,110,.1);border:1px solid rgba(255,0,110,.3);padding:5px 12px;font-family:'Courier New',monospace;font-size:10px;color:var(--pink);letter-spacing:1px">🏆 RUSIA WINS</span>
+    <span style="background:rgba(255,255,255,.05);border:1px solid #222;padding:5px 12px;font-family:'Courier New',monospace;font-size:10px;color:#444;letter-spacing:1px">ESTONIA: RESPAWN</span>
   </div>
 </div>
 
@@ -322,7 +322,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
       <p class="t-raj" style="font-size:12px;color:var(--grey);margin-top:6px">Un soldado estonio por cada 129 rusos. El ministro estonio quería invadir.<br><span style="color:var(--pink)">The Telegraph</span>: <em>"Estonia lista para autodestruirse"</em> · Feb 2026</p>
     </div>
   </div>
-  <div class="a-fade d4" style="margin-top:12px;font-family:'Orbitron',monospace;font-size:10px;color:#333;letter-spacing:2px">[ NIVEL DE AMENAZA ESTONIA PARA RUSIA: FICHERO NO ENCONTRADO ]</div>
+  <div class="a-fade d4" style="margin-top:12px;font-family:'Courier New',monospace;font-size:10px;color:#333;letter-spacing:2px">[ NIVEL DE AMENAZA ESTONIA PARA RUSIA: FICHERO NO ENCONTRADO ]</div>
 </div>
 
 <!-- ══ S5: DATOS LOCOS ══ -->
@@ -372,12 +372,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   <p class="t-game a-zoom d1" style="font-size:clamp(18px,5vw,36px);color:var(--orange);margin-bottom:14px;text-align:center">MURO ESTONIO: ESTADO ACTUAL</p>
   <!-- Wall progress -->
   <div class="a-fade d2" style="width:100%;max-width:660px;margin-bottom:14px">
-    <div style="display:flex;justify-content:space-between;font-family:'Orbitron',monospace;font-size:10px;color:var(--grey);margin-bottom:6px;letter-spacing:1px">
+    <div style="display:flex;justify-content:space-between;font-family:'Courier New',monospace;font-size:10px;color:var(--grey);margin-bottom:6px;letter-spacing:1px">
       <span>PROGRESO CONSTRUCCIÓN (294 km)</span><span style="color:var(--orange)">14%</span>
     </div>
     <div style="height:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,107,0,.3);overflow:hidden;position:relative">
       <div id="wall-fill" style="height:100%;width:0%;background:linear-gradient(90deg,var(--orange),var(--yellow));transition:width 2s ease;display:flex;align-items:center;padding:0 8px">
-        <span style="font-family:'Orbitron',monospace;font-size:10px;font-weight:700;white-space:nowrap">~41 km ██████</span>
+        <span style="font-family:'Courier New',monospace;font-size:10px;font-weight:700;white-space:nowrap">~41 km ██████</span>
       </div>
     </div>
   </div>
@@ -399,7 +399,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
       <div><div class="tl-year" style="color:var(--pink)">2026</div><div class="tl-text">Estado: 14% completado. Presupuesto agotado ×3. Búnkeres: 8% completados. El muro de Berlín tardó 3 años.</div></div>
     </div>
   </div>
-  <div class="a-up d4" style="font-family:'Orbitron',monospace;font-size:10px;color:#333;letter-spacing:2px;margin-top:8px">[ ESTIMACIÓN FINALIZACIÓN AL RITMO ACTUAL: AÑO 2050 ]</div>
+  <div class="a-up d4" style="font-family:'Courier New',monospace;font-size:10px;color:#333;letter-spacing:2px;margin-top:8px">[ ESTIMACIÓN FINALIZACIÓN AL RITMO ACTUAL: AÑO 2050 ]</div>
 </div>
 
 <!-- ══ S7: COMPARATIVA ABSURDA ══ -->
@@ -460,7 +460,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
         <span style="color:var(--grey);font-size:.88em">Aviso: los datos reales son más absurdos que los inventados.</span>
       </p>
     </div>
-    <div class="a-up d4" onclick="nextSlide()" style="display:inline-block;background:var(--yellow);color:var(--bg);font-family:'Black Ops One',cursive;font-size:18px;letter-spacing:3px;padding:10px 28px;cursor:pointer">▶ JUGAR</div>
+    <div class="a-up d4" onclick="nextSlide()" style="display:inline-block;background:var(--yellow);color:var(--bg);font-family:'Impact','Arial Black',sans-serif;font-size:18px;letter-spacing:3px;padding:10px 28px;cursor:pointer">▶ JUGAR</div>
   </div>
 </div>
 
@@ -507,8 +507,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
       <span style="color:var(--grey);font-size:.88em">No es un bug. Es el balance de juego.</span>"</p>
     </div>
     <div class="a-fade d5" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0">
-      <span style="background:rgba(255,0,110,.1);border:1px solid var(--pink);padding:5px 12px;font-family:'Orbitron',monospace;font-size:10px;color:var(--pink);letter-spacing:1px">🇷🇺 RUSIA: 8 victorias</span>
-      <span style="background:rgba(0,245,255,.05);border:1px solid rgba(0,245,255,.2);padding:5px 12px;font-family:'Orbitron',monospace;font-size:10px;color:var(--cyan);letter-spacing:1px">🇪🇪 ESTONIA: 3 victorias (WiFi+Corrup+PIBcap)</span>
+      <span style="background:rgba(255,0,110,.1);border:1px solid var(--pink);padding:5px 12px;font-family:'Courier New',monospace;font-size:10px;color:var(--pink);letter-spacing:1px">🇷🇺 RUSIA: 8 victorias</span>
+      <span style="background:rgba(0,245,255,.05);border:1px solid rgba(0,245,255,.2);padding:5px 12px;font-family:'Courier New',monospace;font-size:10px;color:var(--cyan);letter-spacing:1px">🇪🇪 ESTONIA: 3 victorias (WiFi+Corrup+PIBcap)</span>
     </div>
     <p class="a-fade d6 t-orb" style="font-size:9px;color:#222;letter-spacing:2px;margin-top:8px">Web: nicolceng.github.io/rusia-vs-estonia · Slides: nicolceng.github.io/kremlin-slides</p>
   </div>
